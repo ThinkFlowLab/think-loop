@@ -1,0 +1,24 @@
+{
+  "repository": "example/project",
+  "observed_at": 1000,
+  "complete": true,
+  "pages": {"expected": 1, "received": 1},
+  "errors": [],
+  "pull_requests": [{
+    "number": 1,
+    "state": "open",
+    "draft": false,
+    "head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "author": "contributor",
+    "labels": [],
+    "mergeable": true,
+    "discussion_complete": true,
+    "human_blockers": [],
+    "checks_complete": true,
+    "checks": [{"name": "unit", "head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "status": "success"}],
+    "reviews_complete": true,
+    "reviews": [{"actor": "reviewer", "head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "state": "approved"}],
+    "analysis": {"head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "complete": true},
+    "evidence_revision": "fixture-1"
+  }]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Think Loop project contract v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "repository", "policy_version", "required_labels", "required_checks", "trusted_reviewers", "evidence_max_age_seconds"],
+  "properties": {
+    "contract_version": {"const": "0.1"},
+    "repository": {"type": "string", "pattern": "^[^/]+/[^/]+$"},
+    "policy_version": {"type": "string", "minLength": 1},
+    "required_labels": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "required_checks": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "trusted_reviewers": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "evidence_max_age_seconds": {"type": "integer", "minimum": 1}
+  }
+}
