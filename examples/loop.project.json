@@ -1,0 +1,9 @@
+{
+  "contract_version": "0.1",
+  "repository": "example/project",
+  "policy_version": "example-1",
+  "required_labels": [],
+  "required_checks": ["unit"],
+  "trusted_reviewers": ["reviewer"],
+  "evidence_max_age_seconds": 600
+}
